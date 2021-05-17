@@ -960,6 +960,20 @@ Mobile view adds a hamburger menu. The Order and Seach buttons disappear on smal
 				</div>
 				<a href="" class="navbar-item">Stippenkorting!</a>
 			</div>
+			<div class="navbar-start-end">
+				<div class="navbar-item">
+					<a class="navbar-link is-hidden-touch">Mijn favorieten</a>
+					<button class="navbar-link is-hidden-desktop">Mijn favorieten</button>
+				</div>
+				<div class="navbar-item">
+					<a class="navbar-link is-hidden-touch">Inspiratie</a>
+					<button class="navbar-link is-hidden-desktop">Inspiratie</button>
+				</div>
+				<div class="navbar-item">
+					<a class="navbar-link is-hidden-touch">Mijn account</a>
+					<button class="navbar-link is-hidden-desktop">Mijn account</button>
+				</div>
+			</div>
 		</div>
 
 		<div class="navbar-end">
@@ -975,11 +989,17 @@ Mobile view adds a hamburger menu. The Order and Seach buttons disappear on smal
 
 				</a>
 			</div>
-			<div class="navbar-item is-hidden-touch">
-				<a class="button is-hidden-touch">
-					<img class="btn-icon" src="../assets/toolkit/images/temp/icon-account.svg" alt="My account icoon" />
-
-				</a>
+			<div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+				<button class="button">
+					<img class="btn-icon" src="../assets/toolkit/images/temp/icon-account.svg" alt="My account icoon">
+				</button>
+				<div class="navbar-dropdown is-right">
+					<a href="" class="navbar-item">Profiel</a>
+					<a href="" class="navbar-item">Bestellingen</a>
+					<a href="" class="navbar-item">Mijn favorieten</a>
+					<a href="" class="navbar-item">Account instellingen</a>
+					<a href="" class="navbar-item">Uitloggen</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -1221,6 +1241,20 @@ Mobile view adds a hamburger menu. The Order and Seach buttons disappear on smal
 				&lt;/div&gt;
 				&lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;navbar-item&quot;&gt;Stippenkorting!&lt;/a&gt;
 			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;navbar-start-end&quot;&gt;
+				&lt;div class&#x3D;&quot;navbar-item&quot;&gt;
+					&lt;a class&#x3D;&quot;navbar-link is-hidden-touch&quot;&gt;Mijn favorieten&lt;/a&gt;
+					&lt;button class&#x3D;&quot;navbar-link is-hidden-desktop&quot;&gt;Mijn favorieten&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;navbar-item&quot;&gt;
+					&lt;a class&#x3D;&quot;navbar-link is-hidden-touch&quot;&gt;Inspiratie&lt;/a&gt;
+					&lt;button class&#x3D;&quot;navbar-link is-hidden-desktop&quot;&gt;Inspiratie&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;navbar-item&quot;&gt;
+					&lt;a class&#x3D;&quot;navbar-link is-hidden-touch&quot;&gt;Mijn account&lt;/a&gt;
+					&lt;button class&#x3D;&quot;navbar-link is-hidden-desktop&quot;&gt;Mijn account&lt;/button&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
 		&lt;/div&gt;
 
 		&lt;div class&#x3D;&quot;navbar-end&quot;&gt;
@@ -1236,11 +1270,17 @@ Mobile view adds a hamburger menu. The Order and Seach buttons disappear on smal
 
 				&lt;/a&gt;
 			&lt;/div&gt;
-			&lt;div class&#x3D;&quot;navbar-item is-hidden-touch&quot;&gt;
-				&lt;a class&#x3D;&quot;button is-hidden-touch&quot;&gt;
-					&lt;img class&#x3D;&quot;btn-icon&quot; src&#x3D;&quot;../assets/toolkit/images/temp/icon-account.svg&quot; alt&#x3D;&quot;My account icoon&quot; /&gt;
-
-				&lt;/a&gt;
+			&lt;div class&#x3D;&quot;navbar-item has-dropdown is-hoverable is-hidden-touch&quot;&gt;
+				&lt;button class&#x3D;&quot;button&quot;&gt;
+					&lt;img class&#x3D;&quot;btn-icon&quot; src&#x3D;&quot;../assets/toolkit/images/temp/icon-account.svg&quot; alt&#x3D;&quot;My account icoon&quot;&gt;
+				&lt;/button&gt;
+				&lt;div class&#x3D;&quot;navbar-dropdown is-right&quot;&gt;
+					&lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;navbar-item&quot;&gt;Profiel&lt;/a&gt;
+					&lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;navbar-item&quot;&gt;Bestellingen&lt;/a&gt;
+					&lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;navbar-item&quot;&gt;Mijn favorieten&lt;/a&gt;
+					&lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;navbar-item&quot;&gt;Account instellingen&lt;/a&gt;
+					&lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;navbar-item&quot;&gt;Uitloggen&lt;/a&gt;
+				&lt;/div&gt;
 			&lt;/div&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -1391,6 +1431,10 @@ items:
       - text: Voor haar
       - text: Inpakken &amp; kaartjes
   - text: Stippenkorting!
+end-items:
+  - text: Mijn favorieten
+  - text: Inspiratie
+  - text: Mijn account
 metamenu:
   - button:
       classes: sustainable-btn
@@ -1401,12 +1445,6 @@ metamenu:
       classes: null
       text: null
       icon: temp/icon-shopping-cart-counter.svg
-  - is-hidden-touch: 1
-    button:
-      classes: is-hidden-touch
-      text: null
-      icon: temp/icon-account.svg
-      icon-description: My account icoon
 </code></pre>
 </div>
 

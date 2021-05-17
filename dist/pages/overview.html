@@ -250,6 +250,20 @@
                     </div>
                     <a href="" class="navbar-item">Stippenkorting!</a>
 			</div>
+			<div class="navbar-start-end">
+				<div class="navbar-item">
+					<a class="navbar-link is-hidden-touch">Mijn favorieten</a>
+					<button class="navbar-link is-hidden-desktop">Mijn favorieten</button>
+				</div>
+				<div class="navbar-item">
+					<a class="navbar-link is-hidden-touch">Inspiratie</a>
+					<button class="navbar-link is-hidden-desktop">Inspiratie</button>
+				</div>
+				<div class="navbar-item">
+					<a class="navbar-link is-hidden-touch">Mijn account</a>
+					<button class="navbar-link is-hidden-desktop">Mijn account</button>
+				</div>
+			</div>
 		</div>
 
 		<div class="navbar-end">
@@ -275,17 +289,18 @@
             	
             </a>
             </div>
-            <div class="navbar-item is-hidden-touch">
-            <a
-            	
-            	
-            	
-            	class="button is-hidden-touch"
-            	>
-            	<img class="btn-icon" src="../assets/toolkit/images/temp/icon-account.svg" alt="My account icoon"/>
-            	
-            </a>
-            </div>
+			<div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+				<button class="button">
+					<img class="btn-icon" src="../assets/toolkit/images/temp/icon-account.svg" alt="My account icoon">
+				</button>
+				<div class="navbar-dropdown is-right">
+					<a href="" class="navbar-item">Profiel</a>
+					<a href="" class="navbar-item">Bestellingen</a>
+					<a href="" class="navbar-item">Mijn favorieten</a>
+					<a href="" class="navbar-item">Account instellingen</a>
+					<a href="" class="navbar-item">Uitloggen</a>
+				</div>
+			</div>
         </div>
 	</div>
 </nav>
@@ -300,6 +315,7 @@
 <nav class="panel is-hidden">
 	<p class="panel-tabs">
 	  <a class="panel-tab is-active">Artikelen</a>
+	  <a class="panel-tab">Zoekopdrachten</a>
 	  <a class="panel-tab">Pagina's</a>
 	  <a class="panel-tab">Categorieën</a>
 	</p>
@@ -343,19 +359,15 @@
 				</div>
 				<div class="sustainable-insight columns is-mobile">
 					<p class="column">Stel je voor dat we 10,000 bezoekers per maand hebben voor een jaar lang, dan <b>besparen</b> we evenveel CO2 als 18 bomen gemiddeld in een jaar absorberen!</p>
-					<figure class="image column is-one-fifth">
+					<!-- <figure class="image column is-one-fifth">
 						<img src="./../assets/toolkit/images/temp/icon-tree.svg" alt="Icon tree">
-					</figure>
+					</figure> -->
 				</div>
-				<!-- 
-					Use the body block with {{#content 'modal-body'}} HTML {{/content}}
-				 -->
-				<!--  -->
 			</section>
 			<footer class="modal-card-foot">
 				<!--  -->
 				<p>Wil jij ook een duurzame website? Maar weet je niet waar je moet beginnen?</p>
-				<a href="#" class="button ">Ontdek het dan hier!</a>
+				<a href="https://sustainablewebpractices.netlify.app/" class="button ">Ontdek het dan hier!</a>
 				<!--  -->
 			</footer>
 		</div>
@@ -364,332 +376,408 @@
 		 -->
 	</div>
 <section class="container product-cards has-filter">
-	<h1 class="title is-5">Bakproducten<span class="products-counter"> (16)</span></h1>
-	<button class="button is-dark filter-btn"><img src="../assets/toolkit/images/temp/icon-filter.svg" alt="Filter icon" class="filter-icon"/></button>
-	<div class="columns is-mobile">
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/ovenwand-zandkleur.jpeg" alt="Afbeelding chocolade eieren melk" />
-							</figure>
-						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Ovenwand zandkleur</h1>
-							<p class="subtitle is-7">Bio katoen</p>
-							<span class="price">€4,95</span>
-						</div>
-						<a href="./product-detail.html" class="card-link"></a>
+	<h1 class="title is-5">Koken, grillen, bakken & stomen<span class="products-counter"> (16)</span></h1>
+	<button class="button is-dark filter-btn is-hidden-desktop"><img src="../assets/toolkit/images/temp/icon-filter.svg" alt="Filter icon" class="filter-icon"/></button>
+
+	<div class="overview-content-container columns">
+		<div class="filter-options column is-3">
+			<div class="filter-option dropdown is-hoverable">
+				<span class="filter-sort-by">Sorteren:</span>
+				<div class="dropdown-trigger">
+					<button class="button is-dark" aria-haspopup="true" aria-controls="dropdown-menu">
+					<span>Populariteit</span>
+					</button>
+				</div>
+				<div class="dropdown-menu" id="dropdown-menu" role="menu">
+					<div class="dropdown-content">
+					<a href="#" class="dropdown-item">Populariteit</a>
+					<a class="dropdown-item">Prijs laag - hoog</a>
+					<a href="#" class="dropdown-item">Prijs hoog - laag</a>
+					<a href="#" class="dropdown-item">Alfabetische volgorde (A-Z)</a>
+					<a href="#" class="dropdown-item">Alfabetische volgorde (Z-A)</a>
 					</div>
 				</div>
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/bakbonen.jpeg" alt="afbeelding bakbonen" />
-							</figure>
-						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Bakbonen</h1>
-							<p class="subtitle is-7">300 gram</p>
-							<span class="price">€12,95</span>
-						</div>
-						<a href="./product-detail.html" class="card-link"></a>
-					</div>
+			</div>
+			<div class="collapsible product-description">
+				<input type=radio id="visibleText" name="collapsible"/>
+				<span id="readMoreBtn">
+					<h4>Categorieën</h4>
+					<p>
+						<label for="visibleText">
+			<span class="show-btn-text">Bekijk categorieën</span>
+						</label>
+					</p>
+				</span>
+				<span id="hiddenContent">
+					<p></p>
+					<ul>
+						<label class="checkbox-container">Bakingrediënten (3)
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+						<label class="checkbox-container">Bakvormen &amp; pannen (5)
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+						<label class="checkbox-container">Spatels, tangen &amp; bestek (3)
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+						<label class="checkbox-container">Overige keukenartikelen (5)
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+					</ul>
+					<label for="inputHiddenContent">
+			<span class="hide-btn-text">Sluit categorieën</span>
+					</label>
+				</span>
+				<input type=radio id="inputHiddenContent" name="collapsible" />
+			</div>
+			<div class="filter-option">
+				<span>Prijs</span>
+				<div class="price-inputs">
+					<input type="text" class="input price-input" value="0,95">
+					<span class="price-separator">tot</span>
+					<input type="text" class="input price-input" value="39,95">
 				</div>
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/cadeau-koekjes.jpeg" alt="Pakket koekjes bakken" />
-							</figure>
+			</div>
+			<div class="filter-option">
+				<label class="checkbox-container">Stippenkorting
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+			</div>
+			<button class="button is-dark">Bekijk (7)</button>
+		</div>
+
+		<div class="products column is-9">
+			<div class="columns is-mobile">
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/ovenwand-zandkleur.jpeg" alt="Afbeelding chocolade eieren melk" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Ovenwand zandkleur</h1>
+									<p class="subtitle is-7">Bio katoen</p>
+									<span class="price">€4,95</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Pakket koekjes bakken</h1>
-							<p class="subtitle is-7">Samengesteld pakket</p>
-							<span class="price">€11,95</span>
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/bakbonen.jpeg" alt="afbeelding bakbonen" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Bakbonen</h1>
+									<p class="subtitle is-7">300 gram</p>
+									<span class="price">€12,95</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<a href="./product-detail.html" class="card-link"></a>
-					</div>
-				</div>
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/keukenweegschaal.jpeg" alt="Afbeelding Retro keukenweegschaal" />
-							</figure>
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/cadeau-koekjes.jpeg" alt="Pakket koekjes bakken" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Pakket koekjes bakken</h1>
+									<p class="subtitle is-7">Samengesteld pakket</p>
+									<span class="price">€11,95</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Retro keukenweegschaal</h1>
-							<p class="subtitle is-7">Metaal, 1kg</p>
-							<span class="price">€19,95</span>
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/keukenweegschaal.jpeg" alt="Afbeelding Retro keukenweegschaal" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Retro keukenweegschaal</h1>
+									<p class="subtitle is-7">Metaal, 1kg</p>
+									<span class="price">€19,95</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<a href="./product-detail.html" class="card-link"></a>
-					</div>
-				</div>
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/madeleinevorm.jpeg" alt="Afbeelding Madeleinevorm" />
-							</figure>
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/madeleinevorm.jpeg" alt="Afbeelding Madeleinevorm" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Madeleinevorm</h1>
+									<p class="subtitle is-7">Metaal, 40x20 cm</p>
+									<span class="price">€11,95</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Madeleinevorm</h1>
-							<p class="subtitle is-7">Metaal, 40x20 cm</p>
-							<span class="price">€11,95</span>
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/speculaasplankje.jpeg" alt="Afbeelding Speculaasplankje" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Speculaasplankje stellingmolen</h1>
+									<p class="subtitle is-7">15x9 cm</p>
+									<span class="price">€6,95</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<a href="./product-detail.html" class="card-link"></a>
-					</div>
-				</div>
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/speculaasplankje.jpeg" alt="Afbeelding Speculaasplankje" />
-							</figure>
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/bakmix-bierbrood.jpeg" alt="Afbeelding Bakmix bierbrood" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Bakmix bierbrood</h1>
+									<p class="subtitle is-7">400 gram</p>
+									<span class="price">€5,95</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Speculaasplankje stellingmolen</h1>
-							<p class="subtitle is-7">15x9 cm</p>
-							<span class="price">€6,95</span>
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/roomhoornpen.jpeg" alt="Afbeelding Roomhoornpen" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Roomhoornpen</h1>
+									<p class="subtitle is-7">Roestvrijstaal</p>
+									<span class="price">€1,95</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<a href="./product-detail.html" class="card-link"></a>
-					</div>
-				</div>
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/bakmix-bierbrood.jpeg" alt="Afbeelding Bakmix bierbrood" />
-							</figure>
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/poffertjespan.jpeg" alt="Afbeelding Poffertjespan gietijzer" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Poffertjespan gietijzer</h1>
+									<p class="subtitle is-7">24 cm</p>
+									<span class="price">€39,95</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Bakmix bierbrood</h1>
-							<p class="subtitle is-7">400 gram</p>
-							<span class="price">€5,95</span>
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/vleeshamer.jpeg" alt="Afbeelding Vleeshamer" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Vleeshamer</h1>
+									<p class="subtitle is-7">Beukenhout met aluminum</p>
+									<span class="price">€5,50</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<a href="./product-detail.html" class="card-link"></a>
-					</div>
-				</div>
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/roomhoornpen.jpeg" alt="Afbeelding Roomhoornpen" />
-							</figure>
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/bakkwastje.jpeg" alt="Afbeelding Bakkwastje rond" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Bakkwastje rond</h1>
+									<p class="subtitle is-7">Beukenhout</p>
+									<span class="price">€2,95</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Roomhoornpen</h1>
-							<p class="subtitle is-7">Roestvrijstaal</p>
-							<span class="price">€1,95</span>
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/barbecuepen.jpeg" alt="Afbeelding Bakkwastje rond" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Barbecuepen</h1>
+									<p class="subtitle is-7">Roestvrij staal , 35.5cm</p>
+									<span class="price">€0,95</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<a href="./product-detail.html" class="card-link"></a>
-					</div>
-				</div>
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/poffertjespan.jpeg" alt="Afbeelding Poffertjespan gietijzer" />
-							</figure>
+			</div>
+			<button class="button is-dark show-more-btn">Toon meer (12/16)</button>
+			<div class="columns is-mobile hidden-cards-container is-hidden">
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/stoommandje.jpeg" alt="Afbeelding Stoommandje bamboe" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Stoommandje bamboe</h1>
+									<p class="subtitle is-7">25cm</p>
+									<span class="price">€13,95</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Poffertjespan gietijzer</h1>
-							<p class="subtitle is-7">24 cm</p>
-							<span class="price">€39,95</span>
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/fonduepan.jpeg" alt="Afbeelding Fonduepan/caquelon" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Fonduepan/caquelon</h1>
+									<p class="subtitle is-7">Groot, rood aardewerk</p>
+									<span class="price">€9,95</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<a href="./product-detail.html" class="card-link"></a>
-					</div>
-				</div>
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/vleeshamer.jpeg" alt="Afbeelding Vleeshamer" />
-							</figure>
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/spatdeksel.jpeg" alt="Afbeelding Spatdeksel" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Spatdeksel</h1>
+									<p class="subtitle is-7">30cm</p>
+									<span class="price">€4,95</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Vleeshamer</h1>
-							<p class="subtitle is-7">Beukenhout met aluminum</p>
-							<span class="price">€5,50</span>
+						<div class="column is-half-mobile is-one-third-tablet">
+							 <div class="card ">
+								<header class="card-header">
+									<button class="card-header-icon">
+										<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
+									</button>
+								</header>
+								<div class="card-image">
+									<figure class="image is-square ">
+										<img  src="./../assets/toolkit/images/keukentouw.jpeg" alt="Afbeelding Keukentouw" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-6">Keukentouw</h1>
+									<p class="subtitle is-7">Zwart/wit</p>
+									<span class="price">€4,95</span>
+								</div>
+								<a href="./product-detail.html" class="card-link"></a>
+							</div>
 						</div>
-						<a href="./product-detail.html" class="card-link"></a>
-					</div>
-				</div>
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/bakkwastje.jpeg" alt="Afbeelding Bakkwastje rond" />
-							</figure>
-						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Bakkwastje rond</h1>
-							<p class="subtitle is-7">Beukenhout</p>
-							<span class="price">€2,95</span>
-						</div>
-						<a href="./product-detail.html" class="card-link"></a>
-					</div>
-				</div>
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/barbecuepen.jpeg" alt="Afbeelding Bakkwastje rond" />
-							</figure>
-						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Barbecuepen</h1>
-							<p class="subtitle is-7">Roestvrij staal , 35.5cm</p>
-							<span class="price">€0,95</span>
-						</div>
-						<a href="./product-detail.html" class="card-link"></a>
-					</div>
-				</div>
-	</div>
-	<button class="button is-dark show-more-btn">Toon meer (12/16)</button>
-	<div class="columns is-mobile hidden-cards-container is-hidden">
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/stoommandje.jpeg" alt="Afbeelding Stoommandje bamboe" />
-							</figure>
-						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Stoommandje bamboe</h1>
-							<p class="subtitle is-7">25cm</p>
-							<span class="price">€13,95</span>
-						</div>
-						<a href="./product-detail.html" class="card-link"></a>
-					</div>
-				</div>
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/fonduepan.jpeg" alt="Afbeelding Fonduepan/caquelon" />
-							</figure>
-						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Fonduepan/caquelon</h1>
-							<p class="subtitle is-7">Groot, rood aardewerk</p>
-							<span class="price">€9,95</span>
-						</div>
-						<a href="./product-detail.html" class="card-link"></a>
-					</div>
-				</div>
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/spatdeksel.jpeg" alt="Afbeelding Spatdeksel" />
-							</figure>
-						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Spatdeksel</h1>
-							<p class="subtitle is-7">30cm</p>
-							<span class="price">€4,95</span>
-						</div>
-						<a href="./product-detail.html" class="card-link"></a>
-					</div>
-				</div>
-				<div class="column is-half-mobile is-one-quarter-tablet">
-					 <div class="card ">
-						<header class="card-header">
-							<button class="card-header-icon">
-								<a href="#"><img src="../assets/toolkit/images/temp/icon-shopping-cart.svg" alt="Shopping cart icon" class="btn-icon"/></a>
-							</button>
-						</header>
-						<div class="card-image">
-							<figure class="image is-square ">
-								<img  src="./../assets/toolkit/images/keukentouw.jpeg" alt="Afbeelding Keukentouw" />
-							</figure>
-						</div>
-						<div class="card-content">
-							<h1 class="title is-6">Keukentouw</h1>
-							<p class="subtitle is-7">Zwart/wit</p>
-							<span class="price">€4,95</span>
-						</div>
-						<a href="./product-detail.html" class="card-link"></a>
-					</div>
-				</div>
+			</div>
+		</div>
 	</div>
 </section>
 

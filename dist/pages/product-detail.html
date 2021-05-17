@@ -250,6 +250,20 @@
                     </div>
                     <a href="" class="navbar-item">Stippenkorting!</a>
 			</div>
+			<div class="navbar-start-end">
+				<div class="navbar-item">
+					<a class="navbar-link is-hidden-touch">Mijn favorieten</a>
+					<button class="navbar-link is-hidden-desktop">Mijn favorieten</button>
+				</div>
+				<div class="navbar-item">
+					<a class="navbar-link is-hidden-touch">Inspiratie</a>
+					<button class="navbar-link is-hidden-desktop">Inspiratie</button>
+				</div>
+				<div class="navbar-item">
+					<a class="navbar-link is-hidden-touch">Mijn account</a>
+					<button class="navbar-link is-hidden-desktop">Mijn account</button>
+				</div>
+			</div>
 		</div>
 
 		<div class="navbar-end">
@@ -275,17 +289,18 @@
             	
             </a>
             </div>
-            <div class="navbar-item is-hidden-touch">
-            <a
-            	
-            	
-            	
-            	class="button is-hidden-touch"
-            	>
-            	<img class="btn-icon" src="../assets/toolkit/images/temp/icon-account.svg" alt="My account icoon"/>
-            	
-            </a>
-            </div>
+			<div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+				<button class="button">
+					<img class="btn-icon" src="../assets/toolkit/images/temp/icon-account.svg" alt="My account icoon">
+				</button>
+				<div class="navbar-dropdown is-right">
+					<a href="" class="navbar-item">Profiel</a>
+					<a href="" class="navbar-item">Bestellingen</a>
+					<a href="" class="navbar-item">Mijn favorieten</a>
+					<a href="" class="navbar-item">Account instellingen</a>
+					<a href="" class="navbar-item">Uitloggen</a>
+				</div>
+			</div>
         </div>
 	</div>
 </nav>
@@ -300,6 +315,7 @@
 <nav class="panel is-hidden">
 	<p class="panel-tabs">
 	  <a class="panel-tab is-active">Artikelen</a>
+	  <a class="panel-tab">Zoekopdrachten</a>
 	  <a class="panel-tab">Pagina's</a>
 	  <a class="panel-tab">Categorieën</a>
 	</p>
@@ -343,19 +359,15 @@
 				</div>
 				<div class="sustainable-insight columns is-mobile">
 					<p class="column">Stel je voor dat we 10,000 bezoekers per maand hebben voor een jaar lang, dan <b>besparen</b> we evenveel CO2 als 18 bomen gemiddeld in een jaar absorberen!</p>
-					<figure class="image column is-one-fifth">
+					<!-- <figure class="image column is-one-fifth">
 						<img src="./../assets/toolkit/images/temp/icon-tree.svg" alt="Icon tree">
-					</figure>
+					</figure> -->
 				</div>
-				<!-- 
-					Use the body block with {{#content 'modal-body'}} HTML {{/content}}
-				 -->
-				<!--  -->
 			</section>
 			<footer class="modal-card-foot">
 				<!--  -->
 				<p>Wil jij ook een duurzame website? Maar weet je niet waar je moet beginnen?</p>
-				<a href="#" class="button ">Ontdek het dan hier!</a>
+				<a href="https://sustainablewebpractices.netlify.app/" class="button ">Ontdek het dan hier!</a>
 				<!--  -->
 			</footer>
 		</div>
@@ -376,6 +388,10 @@
 				<figure class="image is-square">
 					<img src="./../assets/toolkit/images/ovenwand-zandkleur.jpeg" alt="Afbeelding ovenwand zandkleur">
 				</figure>
+				<div class="circles">
+					<span class="circle"></span>
+					<span class="circle"></span>
+				</div>
 			</div>
 		</div>
 		<div class="column">
@@ -389,13 +405,15 @@
 					<span id="readMoreBtn">
 						<h4>Mooie ovenwant om je handen te beschermen bij het oppakken van hete schalen of pannen.</h4>
 						<p>
-							<label for="visibleText"><span class="show-btn-text">Lees meer</span></label>
+							<label for="visibleText">
+				<span class="show-btn-text">Lees meer</span>
+							</label>
 						</p>
 					</span>
 					<span id="hiddenContent">
 						<p>Let op! Vochtig katoen geleidt warmte. Een natte ovenwant beschermt je handen daarom minder goed. Wassen op 40°C, strijken op max 175°C. Gebruik geen bleekmiddel. Was donker textiel de eerste keer apart. Let op. Na de eerste wasbeurt kan het materiaal 5 tot 8% krimpen. Doe het textiel – om de kans hierop te verkleinen – niet in de droger.</p>
-						<label for="inputHiddenContent">
-							<span class="hide-btn-text">Lees minder</span>
+								<label for="inputHiddenContent">
+				<span class="hide-btn-text">Lees minder</span>
 						</label>
 					</span>
 					<input type=radio id="inputHiddenContent" name="collapsible" />
@@ -405,7 +423,7 @@
 					<button class="button is-dark">In winkelmandje</button>
 				</div>
 				<ul class="usps-list-container">
-					<li class="usps-list-item ">
+					<li class="usps-list-item">
 							<figure class="usps-list-image">
 								<img src="./../assets/toolkit/images/temp/icon-delivery.svg" alt="">
 							</figure>

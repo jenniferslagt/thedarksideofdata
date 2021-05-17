@@ -418,57 +418,16 @@ price: gratis
 
 </div>
 <div class="f-item-preview">
-	<div class="collapsible product-description">
-	<input type=radio id="visibleText" name="collapsible" />
-	<span id="readMoreBtn">
-		<h4>Mooie ovenwant om je handen te beschermen bij het oppakken van hete schalen of pannen.</h4>
-		<p>
-			<label for="visibleText"><span class="show-btn-text">Lees meer</span></label>
-		</p>
-	</span>
-	<span id="hiddenContent">
-		<p>Let op! Vochtig katoen geleidt warmte. Een natte ovenwant beschermt je handen daarom minder goed. Wassen op 40°C, strijken op max 175°C. Gebruik geen bleekmiddel. Was donker textiel de eerste keer apart. Let op. Na de eerste wasbeurt kan het materiaal 5 tot 8% krimpen. Doe het textiel – om de kans hierop te verkleinen – niet in de droger.</p>
-		<label for="inputHiddenContent">
-			<span class="hide-btn-text">Lees minder</span>
-		</label>
-	</span>
-	<input type=radio id="inputHiddenContent" name="collapsible" />
-</div>
+	
 </div>
 
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<p class="f-title is-6">HTML</p>
-	<pre class="language-markup"><code class="language-markup">&lt;div class&#x3D;&quot;collapsible product-description&quot;&gt;
-	&lt;input type&#x3D;radio id&#x3D;&quot;visibleText&quot; name&#x3D;&quot;collapsible&quot; /&gt;
-	&lt;span id&#x3D;&quot;readMoreBtn&quot;&gt;
-		&lt;h4&gt;Mooie ovenwant om je handen te beschermen bij het oppakken van hete schalen of pannen.&lt;/h4&gt;
-		&lt;p&gt;
-			&lt;label for&#x3D;&quot;visibleText&quot;&gt;&lt;span class&#x3D;&quot;show-btn-text&quot;&gt;Lees meer&lt;/span&gt;&lt;/label&gt;
-		&lt;/p&gt;
-	&lt;/span&gt;
-	&lt;span id&#x3D;&quot;hiddenContent&quot;&gt;
-		&lt;p&gt;Let op! Vochtig katoen geleidt warmte. Een natte ovenwant beschermt je handen daarom minder goed. Wassen op 40°C, strijken op max 175°C. Gebruik geen bleekmiddel. Was donker textiel de eerste keer apart. Let op. Na de eerste wasbeurt kan het materiaal 5 tot 8% krimpen. Doe het textiel – om de kans hierop te verkleinen – niet in de droger.&lt;/p&gt;
-		&lt;label for&#x3D;&quot;inputHiddenContent&quot;&gt;
-			&lt;span class&#x3D;&quot;hide-btn-text&quot;&gt;Lees minder&lt;/span&gt;
-		&lt;/label&gt;
-	&lt;/span&gt;
-	&lt;input type&#x3D;radio id&#x3D;&quot;inputHiddenContent&quot; name&#x3D;&quot;collapsible&quot; /&gt;
-&lt;/div&gt;</code></pre>
+	<pre class="language-markup"><code class="language-markup"></code></pre>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="yml">
 	<p class="f-title is-6">YML data</p>
-	<pre class="language-yml"><code class="language-yml">classes: product-description
-visible-text: &gt;-
-  Mooie ovenwant om je handen te beschermen bij het oppakken van hete schalen of
-  pannen.
-show-btn-text: Lees meer
-invisible-text: &gt;-
-  Let op! Vochtig katoen geleidt warmte. Een natte ovenwant beschermt je handen
-  daarom minder goed. Wassen op 40°C, strijken op max 175°C. Gebruik geen
-  bleekmiddel. Was donker textiel de eerste keer apart. Let op. Na de eerste
-  wasbeurt kan het materiaal 5 tot 8% krimpen. Doe het textiel – om de kans
-  hierop te verkleinen – niet in de droger.
-hide-btn-text: Lees minder
+	<pre class="language-yml"><code class="language-yml">!&lt;tag:yaml.org,2002:js/undefined&gt; &#x27;&#x27;
 </code></pre>
 </div>
 
@@ -1203,19 +1162,15 @@ text: &gt;-
 			</div>
 			<div class="sustainable-insight columns is-mobile">
 				<p class="column">Stel je voor dat we 10,000 bezoekers per maand hebben voor een jaar lang, dan <b>besparen</b> we evenveel CO2 als 18 bomen gemiddeld in een jaar absorberen!</p>
-				<figure class="image column is-one-fifth">
+				<!-- <figure class="image column is-one-fifth">
 					<img src="./../assets/toolkit/images/temp/icon-tree.svg" alt="Icon tree">
-				</figure>
+				</figure> -->
 			</div>
-			<!-- 
-				Use the body block with {{#content 'modal-body'}} HTML {{/content}}
-			 -->
-			<!--  -->
 		</section>
 		<footer class="modal-card-foot">
 			<!--  -->
 			<p>Wil jij ook een duurzame website? Maar weet je niet waar je moet beginnen?</p>
-			<a href="#" class="button ">Ontdek het dan hier!</a>
+			<a href="https://sustainablewebpractices.netlify.app/" class="button ">Ontdek het dan hier!</a>
 			<!--  -->
 		</footer>
 	</div>
@@ -1247,19 +1202,15 @@ text: &gt;-
 			&lt;/div&gt;
 			&lt;div class&#x3D;&quot;sustainable-insight columns is-mobile&quot;&gt;
 				&lt;p class&#x3D;&quot;column&quot;&gt;Stel je voor dat we 10,000 bezoekers per maand hebben voor een jaar lang, dan &lt;b&gt;besparen&lt;/b&gt; we evenveel CO2 als 18 bomen gemiddeld in een jaar absorberen!&lt;/p&gt;
-				&lt;figure class&#x3D;&quot;image column is-one-fifth&quot;&gt;
+				&lt;!-- &lt;figure class&#x3D;&quot;image column is-one-fifth&quot;&gt;
 					&lt;img src&#x3D;&quot;./../assets/toolkit/images/temp/icon-tree.svg&quot; alt&#x3D;&quot;Icon tree&quot;&gt;
-				&lt;/figure&gt;
+				&lt;/figure&gt; --&gt;
 			&lt;/div&gt;
-			&lt;!-- 
-				Use the body block with {{#content &#x27;modal-body&#x27;}} HTML {{/content}}
-			 --&gt;
-			&lt;!--  --&gt;
 		&lt;/section&gt;
 		&lt;footer class&#x3D;&quot;modal-card-foot&quot;&gt;
 			&lt;!--  --&gt;
 			&lt;p&gt;Wil jij ook een duurzame website? Maar weet je niet waar je moet beginnen?&lt;/p&gt;
-			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;button &quot;&gt;Ontdek het dan hier!&lt;/a&gt;
+			&lt;a href&#x3D;&quot;https://sustainablewebpractices.netlify.app/&quot; class&#x3D;&quot;button &quot;&gt;Ontdek het dan hier!&lt;/a&gt;
 			&lt;!--  --&gt;
 		&lt;/footer&gt;
 	&lt;/div&gt;
@@ -1282,6 +1233,7 @@ has-close: 1
 footer:
   - text: Wil jij ook een duurzame website? Maar weet je niet waar je moet beginnen?
     classes: null
+    href: &#x27;https://sustainablewebpractices.netlify.app/&#x27;
     btn-text: Ontdek het dan hier!
 </code></pre>
 </div>
